@@ -1,0 +1,35 @@
+Source: mycroft-embedded-shell
+Section: kde
+Priority: optional
+Maintainer: KDE neon <neon@kde.org>
+Build-Depends: cmake,
+               debhelper (>= 9.0.0),
+               extra-cmake-modules,
+               libkf5kio-dev,
+               libqt5websockets5-dev,
+               libkf5i18n-dev,
+               libkf5notifications-dev,
+               libkf5plasma-dev,
+               pkg-config,
+               pkg-kde-tools,
+               qtbase5-dev,
+               qtdeclarative5-dev,
+               libqt5webview5-dev,
+               qtmultimedia5-dev,
+               plasma-workspace-dev,
+               libkf5dbusaddons-dev
+Standards-Version: 3.9.8
+
+Package: mycroft-embedded-shell
+Architecture: any
+Depends: plasma-workspace,
+         qml-module-qtquick-particles2,
+         qml-module-qtwebengine,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Mycroft Ai Plasmoid and Skills for KDE Plasma 5 Desktop
+ Tool to integrate Mycroft with your KDE Plasma 5 Desktop
+ .
+ It adds a set of plasmoids, plugins and services to the KDE Plasma Workspace.
+ .
+ These can be added to your desktop, or any panels on your workspace.
